@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f2eb" />
+    <title>Léxico · Estudia palabras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <button class="brand" id="homeButton" aria-label="Volver a mis cuadernos">Léxico<span>·</span></button>
+        <p id="topContext">mis cuadernos</p>
+        <button class="icon-button hidden" id="addCardTop" aria-label="Añadir palabra">＋</button>
+      </header>
+      <section id="app" aria-live="polite"></section>
+    </main>
+    <template id="folderTemplate">
+      <article class="folder-card">
+        <div class="folder-icon">◒</div>
+        <div class="folder-copy"><h3></h3><p></p></div>
+        <div class="folder-count"></div>
+      </article>
+    </template>
+    <script src="app.js"></script>
+  </body>
+</html>
