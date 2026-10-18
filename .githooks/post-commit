@@ -1,0 +1,3 @@
+#!/bin/sh
+# Mantiene GitHub sincronizado después de cada commit local.
+/usr/bin/git push origin main
